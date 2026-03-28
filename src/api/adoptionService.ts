@@ -52,7 +52,7 @@ export const adoptionService = {
     }
 
     return response.json();
-=======
+
     return apiClient.post(`/adoption/${adoptionId}/complete`);
   },
 

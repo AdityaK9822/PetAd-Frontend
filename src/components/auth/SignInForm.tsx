@@ -67,6 +67,7 @@ export function SignInForm() {
             console.log("Sign in successful with:", formData.email);
             navigate("/home"); // Redirect to homepage after successful sign in
             // NOTE: Here you would typically redirect or dispatch a login action
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (err: any) {
             setErrors((prev) => ({ ...prev, submit: err.message || "Failed to sign in. Please try again." }));
         } finally {
